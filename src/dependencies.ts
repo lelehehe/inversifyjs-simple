@@ -1,3 +1,6 @@
+import { injectable } from "inversify";
+
+@injectable()
 export class DependencyA {
   private readonly name: string = 'dependencyA';
 
@@ -6,6 +9,7 @@ export class DependencyA {
   }
 }
 
+@injectable()
 export class DependencyB {
   private readonly name: string = 'dependencyB';
 
